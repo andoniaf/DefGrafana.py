@@ -12,8 +12,11 @@
 username = 'admin'
 passGraf = 'secret'
 # Necesario sobretodo en consultas pesadas
-timeout = 5
+timeout = 10
 imgName = 'webScreen_'
+#Resolucion de la "ventana"
+hWin = 1200
+wWin = 800
 ##############
 import sys
 import time
@@ -30,8 +33,9 @@ else:
   print("URL a capturar: " + webUrl)
 
   driver = webdriver.PhantomJS()
+  driver.set_window_size(hWin, wWin)
   driver.get(webUrl)
-
+  
   ## Introducimos username
   user_name=driver.find_element_by_name('username')
   user_name_text = user_name.text
@@ -51,6 +55,7 @@ else:
   # Timestamp para evitar sobreescribir capturas
   currTime = time.strftime("%y%m%d%H%M%S", time.localtime())
   imgName = imgName + currTime + '.png'
+  driver.set_window_size(600, 600)
   driver.save_screenshot(imgName)
   print("Screen guardada como: " + imgName)
 
