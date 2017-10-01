@@ -34,12 +34,14 @@ python3 DefGrafana.py --cut-panel 'http://grafana.khal.drogo/dashboard/db/testin
 
 
 
-
+----
 
 ### Origen del nombre
 * **Grafana**: Fácil, se usa con [Grafana](https://grafana.com/).
 * **Def**: Si aun no has caído [pincha aqui](https://open.spotify.com/album/0IXPDVnECWSt6NFLDlgpoC).
 
+
+-----
 
 -----
 
