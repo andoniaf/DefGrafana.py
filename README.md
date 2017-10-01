@@ -8,7 +8,7 @@ Script para capturar imágenes dentro de Grafana.
 ## Modo de uso
 - Modificar sección "VARS" dentro del script.
 - Ejecutar: ```python3 DefGrafana.py '<URL a capturar>'```
-
+- Guarda la captura en el mismo directorio desde donde se ejecuta.
 
 
 ## Dependencias
