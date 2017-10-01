@@ -16,11 +16,11 @@ Script para capturar imágenes dentro de Grafana.
 ```
 python3 DefGrafana.py --cut-panel 'http://grafana.khal.drogo/dashboard/db/testing?orgId=1&panelId=1&fullscreen&from=1506871493635&to=1506893093635'
 ```
- - Imagen inicial:
+   - Imagen inicial:
 
   <img src="./img/grafExample_171001232338.png" width="300">
 
- - Panel recortado:
+   - Panel recortado:
 
  <img src="./img/panelGrafExample_171001232338.png" width="300">
 
