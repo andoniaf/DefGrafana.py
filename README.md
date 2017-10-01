@@ -1,4 +1,5 @@
 <img src="./defGrafana.png" width="300">
+
 # DefGrafana.py
 
 Script para capturar imágenes dentro de Grafana.
