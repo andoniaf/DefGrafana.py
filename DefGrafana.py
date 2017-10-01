@@ -5,6 +5,8 @@
 #
 # Modo de uso: - Modificar seccion "VARS"
 #              - Ejecutar: python3 DefGrafana.py '<URL Dashboard>'
+#                - Usar la opcion '--cut-panel' para añadir otra imagen con el panel recortado:
+#                          python3 DefGrafana.py --cut-panel '<URL Dashboard>'
 #
 # https://github.com/andoniaf
 
