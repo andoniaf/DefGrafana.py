@@ -27,6 +27,7 @@ Script para capturar imágenes dentro de Grafana.
 * **Def**: Si aun no has caído [pincha aqui](https://open.spotify.com/album/0IXPDVnECWSt6NFLDlgpoC).
 
 
+-----
 
 #### Anexo I: Instalación de PhantomJS en Ubuntu/Debian
 ```
