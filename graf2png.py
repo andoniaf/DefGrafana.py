@@ -5,9 +5,10 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from PIL import Image
 
 
-def graf2png(weburl, username, password, timeout, imgname, hwin, wwin):
+def graf2png(weburl, username, password, timeout, imgname, hwin, wwin, onlypanel):
     driver = webdriver.PhantomJS()
     driver.set_window_size(hwin, wwin)
     driver.get(weburl)
@@ -32,3 +33,22 @@ def graf2png(weburl, username, password, timeout, imgname, hwin, wwin):
     # Realizar screenshot
     driver.save_screenshot(imgname)
     print("Screen guardada como: " + imgname)
+    # Recortar panel(?)
+    #   Solo funciona con los paneles cuya clase sea 'panel-fullscreen',
+    #     esta es la clase que tiene por defecto los paneles cuando
+    #     generas un enlace para compartir. (Share Panel > Link > Copy)
+    if (onlypanel):
+        panel = driver.find_element_by_class_name('panel-fullscreen')
+        plocation = panel.location
+        psize = panel.size
+
+        left = plocation['x']
+        top = plocation['y']
+        right = plocation['x'] + psize['width']
+        bottom = plocation['y'] + psize['height']
+
+        pimg = Image.open(imgname)
+        pimg = pimg.crop((left, top, right, bottom))
+        pimgname = 'panel_' + imgname
+        pimg.save(pimgname)
+        print("Panel recortado guardado como: " + pimgname)

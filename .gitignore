@@ -1,4 +1,6 @@
 webScreen_*.png
+grafImg*.png
+panel_grafImg*.png
 .idea
 *.log
 # Byte-compiled / optimized / DLL files

@@ -13,7 +13,7 @@ username = 'admin'
 password = 'secret'
 # Necesario sobretodo en consultas pesadas
 timeout = 5
-imgName = 'webScreen_'
+imgName = 'grafImg_'
 # Resolucion de la "ventana"
 hWin = 1200
 wWin = 800
@@ -28,7 +28,13 @@ if len(sys.argv) == 1:
     print(mensaje)
 
 else:
-    webUrl = sys.argv[1]
+    if (sys.argv[1] == '--cut-panel'):
+        onlyPanel = True
+        webUrl = sys.argv[2]
+    else:
+        onlyPanel = False
+        webUrl = sys.argv[1]
+
     print("URL a capturar: " + webUrl)
 
-    graf2png(webUrl, username, password, timeout, imgName, hWin, wWin)
+    graf2png(webUrl, username, password, timeout, imgName, hWin, wWin, onlyPanel)
