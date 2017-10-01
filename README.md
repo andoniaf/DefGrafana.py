@@ -1,4 +1,4 @@
-<img src="./defGrafana.png" width="300">
+<img src="./img/defGrafana.png" width="300">
 
 
 Script para capturar imágenes dentro de Grafana.
