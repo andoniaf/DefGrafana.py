@@ -15,7 +15,7 @@ Script para capturar imágenes dentro de Grafana.
 - **Python**: Probado con las versiones 3.4.2 y 3.5.2
   - Dependencias: ```pip3 install -r requirements.txt```
 - **phantomJS**: Versión 2.1.1
-  - Ver [Anexo I](#Anexo-I) para instalación sobre Ubuntu/Debian
+  - Ver [Anexo I](#anexo-i-instalación-de-phantomjs-en-ubuntudebian) para instalación sobre Ubuntu/Debian
 
 
 
@@ -28,7 +28,7 @@ Script para capturar imágenes dentro de Grafana.
 
 
 
-#### Anexo I: instalación de PhantomJS en Ubuntu/Debian
+#### Anexo I: Instalación de PhantomJS en Ubuntu/Debian
 ```
 apt-get update
 apt-get upgrade
