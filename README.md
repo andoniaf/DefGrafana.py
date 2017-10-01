@@ -12,7 +12,7 @@ Script para capturar imágenes dentro de Grafana.
   - La opcion ```--cut-panel``` permite añadir otra imagen con el panel recortado: ```python3 DefGrafana.py --cut-panel '<URL Dashboard>'```
 
 
-- Ejemplo de uso:
+### Ejemplo de uso:
 ```
 python3 DefGrafana.py --cut-panel 'http://grafana.khal.drogo/dashboard/db/testing?orgId=1&panelId=1&fullscreen&from=1506871493635&to=1506893093635'
 ```
