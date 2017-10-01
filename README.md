@@ -9,7 +9,7 @@ Script para capturar imágenes dentro de Grafana.
 - Modificar sección "VARS" dentro del script.
 - Ejecutar: ```python3 DefGrafana.py '<URL a capturar>'```
   - Guarda la captura en el mismo directorio desde donde se ejecuta.
-- La opcion '--cut-panel' permite añadir otra imagen con el panel recortado: ```python3 DefGrafana.py --cut-panel '<URL Dashboard>'```
+- La opcion '<pre>--cut-panel</pre>' permite añadir otra imagen con el panel recortado: ```python3 DefGrafana.py --cut-panel '<URL Dashboard>'```
 
 ## Dependencias
 - **Python**: Probado con las versiones 3.4.2 y 3.5.2
