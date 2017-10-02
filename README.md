@@ -18,11 +18,11 @@ python3 DefGrafana.py --cut-panel 'http://grafana.khal.drogo/dashboard/db/testin
 ```
    - Imagen inicial:
 
-  <img src="./img/grafExample_171001232338.png" width="300">
+  <img src="./img/grafExample_171001232338.png" width="500">
 
    - Panel recortado:
 
- <img src="./img/panelGrafExample_171001232338.png" width="300">
+ <img src="./img/panelGrafExample_171001232338.png" width="500">
 
 
 ## Dependencias
